@@ -1,3 +1,10 @@
+/* Inspired by https://codepen.io/gayane-gasparyan/pen/jOmaBQK */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 @font-face {
 	font-family: font1;
 	src: url(../fonts/PlayFair.ttf);
@@ -88,6 +95,14 @@ body {
 	animation: spin 2.5s linear infinite;
 }
 
+.header {
+	overflow-wrap: anywhere;
+}
+
+.content {
+	overflow-wrap: anywhere;
+}
+
 @keyframes spin {
 	0% {
 		--rotate: 0deg;
@@ -125,5 +140,16 @@ body {
 	}
 	100% {
 		transform: scale(1);
+	}
+}
+
+/* RESPONSIVE */
+
+@media screen and(max-width: 900px) {
+	.card {
+		font-size: 1rem;
+	}
+	.content {
+		font-size: 0.4rem;
 	}
 }
