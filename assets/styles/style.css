@@ -1,6 +1,6 @@
 @font-face {
 	font-family: font1;
-	src: url(./PlayFair.ttf);
+	src: url(../fonts/PlayFair.ttf);
 }
 
 @property --rotate {
