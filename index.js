@@ -1,8 +1,6 @@
 const header = document.getElementById('header');
 const content = document.getElementById('content');
 
-console.log(header, content);
-
 const getJoke = () => {
 	fetch('https://api.blablagues.net/?rub=blagues')
 		.then((res) => res.json())
